@@ -43,9 +43,11 @@ public class Controller extends ComponentAdapter implements ActionListener, List
 
     @Override
     public void valueChanged(ListSelectionEvent e) {
-        int newIndex = ((JList)e.getSource()).getSelectedIndex();
-        model.updateIndex(newIndex);
-        System.out.println(model.getCurrentImage());
+        if (!((JList)(e.getSource())).getSelectedValue().equals("Empty")) {
+            int newIndex = ((JList) e.getSource()).getSelectedIndex();
+            model.updateIndex(newIndex);
+            System.out.println(model.getCurrentImage());
+        }
     }
 
     @Override
