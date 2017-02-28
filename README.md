@@ -1,4 +1,4 @@
-# CS 3323 Assignment 2
+# CS 3053 Assignment 2
 By Christopher Tse
 
 This is the source code for my solution to Assignment 2 in CS 3323 Human Computer Interactions. 
